@@ -13,6 +13,7 @@ const btnmoins = document.getElementById("-");
 const btndiv = document.getElementById("/");
 const btnmult = document.getElementById("*");
 const btnegal = document.getElementById("=");
+const btnc = document.getElementById("c");
 
 let res = document.getElementById("res");
 let premierNb = 0;
@@ -67,6 +68,14 @@ btn9.addEventListener("click", function(){
 btn0.addEventListener("click", function(){
     console.log("Bouton 0 appuyé");
     res.value += "0";
+    console.log(res.value);
+})
+
+btnc.addEventListener("click", function(){
+    console.log("Bouton correction appuyé");
+    res.value = "";
+    op = "";
+    premierNb = 0;
     console.log(res.value);
 })
 
